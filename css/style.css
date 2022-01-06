@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Merriweather:wght@400;700&display=swap');
+
+/*RESET*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+button,
+input,
+textarea {
+    border: 0;
+    outline: none;
+}
+
+button:focus,
+input:focus,
+textarea:focus {
+    border: 0;
+    outline: none;
+}
+
+
+
+/*VARIAVEIS*/
+:root {
+    --bg: #d7d4ff;
+    --button-color: #6c63ff;
+
+    --white: #ffffff;
+    --white300: #f9f9f9;
+
+    --title: #2b2b2b;
+    --text: #555555;
+}
+
+/* ##CONTAINER */
+
+
+/* ##BODY */
+body {
+    background-color: var(--bg);
+    font-family: 'Merriweather', 'Lato', sans-serif;
+}
+
+/* ##GERAIS */
+.btn {
+    font-family: Lato, sans-serif;
+    font-weight: 500;
+
+    font-size: 1.1rem;
+    background-color: var(--button-color);
+    padding: 15px 50px;
+    color: #fff;
+    border-radius: 8px;
+    ;
+}
+
+p {
+    font-size: 1rem;
+    color: var(--text);
+}
+
+.title {
+    color: var(--title);
+}
+
+/* ##HEADER */
+
+
+header .header-image svg {
+    width: 100%;
+}
+
+header .header-content {
+    width: 30%;
+
+}
+
+header {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header div {
+    flex-shrink: 1;
+}
+
+header .header-content h1 {
+    margin-bottom: 20px;
+}
+
+header .header-content p {
+    margin-bottom: 30px;
+}
+
+
+
+/* ##MAIN */
+main {
+    background-color: var(--white300);
+}
+
+main .card {
+    flex-basis: 330px;
+    margin: 70px 50px;
+    flex-shrink: 1;
+
+
+}
+
+main .card .title {
+    font-size: 1.1rem;
+}
+
+main section {
+    padding: 100px 0px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* ##MAIN CARDS */
+main div.card-head {
+    height: 200px;
+}
+
+main div.card-image {
+    width: 100%;
+    height: 100%;
+}
+
+main div.card:nth-of-type(1) div.card-image {
+    background-color: #FF6363;
+}
+
+main div.card:nth-of-type(2) div.card-image {
+    background-color: #63ECFF;
+}
+
+main div.card:nth-of-type(3) div.card-image {
+    background-color: #F363FF;
+}
+
+main div.card:nth-of-type(4) div.card-image {
+    background-color: #63FF73;
+}
+
+main div.card:nth-of-type(5) div.card-image {
+    background-color: #FFDD63;
+}
+
+main div.card:nth-of-type(6) div.card-image {
+    background-color: #6663FF;
+}
+
+
+main div.card-body {
+    padding: 30px;
+    box-shadow: 0px 0px 8px rgba(43, 43, 43, 0.2);
+}
+
+main div.card-body h1.card-title {
+    margin-bottom: 25px;
+    color: var(--title);
+}
+
+main div.card-body p {
+    font-family: Lato, sans-serif;
+    font-size: 1rem;
+    color: var(--text);
+
+
+}
+
+/* ##FOOTER */
+footer {
+    padding: 85px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer h1.title {
+    text-align: center;
+    font-weight: normal;
+    margin-bottom: 60px;
+
+}
+
+footer input::placeholder,
+footer textarea::placeholder {
+    color: #6E7275BD;
+}
+
+footer input,
+footer textarea,
+footer button {
+    font-family: Lato, sans-serif;
+    width: 470px;
+    height: 65px;
+    display: block;
+    margin: 15px;
+    padding: 15px 20px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+
+
+}
+
+footer button {
+    background-color: var(--button-color);
+    color: #fff;
+    font-weight: 500;
+}
+
+footer button {
+    margin-top: 35px;
+
+}
+
+/* ## RESPONSIVE MEDIA QUERIES */
+@media only screen and (max-width:920px) {
+    header {
+        padding: 30px;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header div.header-content {
+        width: 85vw;
+        margin-bottom: 100px;
+    }
+
+    header .header-image svg {
+        width: 85vw;
+        text-align: center;
+    }
+
+    main section {
+        width: 100vw;
+
+
+    }
+
+    main section div.card {
+        width: 85vw;
+        flex-basis: 1fr;
+        flex-grow: 1;
+    }
+
+    footer input,
+    footer textarea,
+    footer button {
+        width: 85vw;
+    }
+
+
+}
