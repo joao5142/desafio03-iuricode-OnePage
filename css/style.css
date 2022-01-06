@@ -22,6 +22,10 @@ img {
     display: block;
 }
 
+button{
+    cursor:pointer;
+}
+
 button,
 input,
 textarea {
